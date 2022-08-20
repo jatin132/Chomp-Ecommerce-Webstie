@@ -1,0 +1,131 @@
+html, body{
+	font-family: sans-serif;
+	overflow-x: hidden;
+}
+/*anchor tag*/
+a.order:link{
+	color: white;
+	text-decoration: none;
+}
+a.order:visited{
+	color: white;
+}
+a.order:hover{
+	color: white;
+	text-decoration: underline;
+}
+a.order:active{
+	color: white;
+}	
+button a.order:link{
+	color: white;
+	text-decoration: none;
+}
+button a.order:visited{
+	color: white;
+}
+button a.order:hover{
+	color: white;
+	text-decoration: none;
+}
+button a.order:active{
+	color: white;
+}
+button a.order1:link{
+	color: lightblue;
+	text-decoration: none;
+}
+button a.order1:visited{
+	color: lightblue;
+}
+button a.order1:hover{
+	color: lightblue;
+	text-decoration: none;
+}
+button a.order1:active{
+	color: lightblue;
+}
+/*header*/
+.header-text{
+	color: hsla(0, 0%, 100%, 0.8);
+}
+nav{
+	background: white !important;
+}
+.navbar-brand{
+	width: 45px;
+}
+
+/*sections*/
+.section-1{
+	margin-top: 100px;
+}
+@media (max-width: 800px){
+	.align-center{
+		text-align: center;
+	}
+}
+.section-2{
+	margin-top: 50px;
+}
+.section-3{
+	margin-top: 200px;
+}
+.items{
+	border: 1px solid black;
+	padding: 30px;
+	border-radius: 10px;
+}
+.items:hover{
+	border: 1px solid lightblue;
+}
+.order2{
+	background: white;
+}
+
+/*footer*/
+footer{
+	background: lightcyan;
+}
+footer div .order3{
+	margin-top: 50px;
+}
+footer ul li{
+	list-style: none;
+}
+footer ul li a{
+	color: grey;
+	margin-left: -35px;
+	line-height: 40px;
+}
+
+/*order.html page*/
+div.section-4{
+	background: lightcyan;
+}
+.section-5{
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+
+/*company.html page*/
+.fixed-bg{
+  background-image: url("../images/Hero-image-5.png");
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.section-6{
+	margin-top: 100px;
+}
+
+/*faq.html page*/
+a.card-link{
+	font-size: 25px;
+}
+div.card-body{
+	color: grey;
+	font-size: 20px;
+}

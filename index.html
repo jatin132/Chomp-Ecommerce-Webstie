@@ -1,0 +1,519 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link rel="icon" type="image/x-icon" href="assets/images/logo.svg">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <title> Chome Ecommerce Website </title>
+<style type="text/css">
+  .grid-container{
+    display: grid;
+    grid-gap: 10px;
+    padding: 10px;
+    grid-template-areas: 
+    'area-one area-one area-two area-two'
+    'area-three area-three area-four area-four'
+    'area-five area-five area-six area-six';
+  }
+  #item-one{grid-area: area-one;}
+  #item-two{grid-area: area-two;}
+  #item-three{grid-area: area-three;}
+  #item-four{grid-area: area-four;}
+  #item-five{grid-area: area-five;}
+  #item-six{grid-area: area-six;}
+  /*#item-one{grid-area: area-one;}*/
+
+  @media (max-width: 700px){
+    .grid-container{
+      display: block;
+    }
+  }
+  @media (min-width: 400px) and (max-width: 786px){
+    .items{
+      margin-bottom: 15px;
+      flex-direction: column;
+    }
+  }
+  @media (min-width: 400px) and (max-width: 786px){
+    .one{
+      width: 100%;
+      height: 300px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+  }
+  @media (min-width: 400px) and (max-width: 786px){
+    .two{
+      margin-left: 20px;
+    }
+  }
+  @media (min-width: 400px) and (max-width: 786px){
+    .three{
+      margin-top: 15px;
+      display: block;
+    }
+  }
+</style>
+</head>
+<body>
+  <header class="bg-info">
+    <p class="header-text text-center p-3 m-auto">
+      We're open and available for takeaway & delivery.
+      <a href="order.html" class="order"><span class="text-white"> Order Now </span></a>
+    </p>
+    <nav class="navbar navbar-expand-md bg-light navbar-light">
+      <div class="container" id="nav-class">
+        <a href="#" alt="Logo" class="navbar-brand">
+          <img src="assets/images/logo.svg" class="img-fluid navbar-brand">
+        </a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html"> Home </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="order.html"> Order </a>
+            </li>
+            <li class="nav-item">
+              <a href="company.html" class="nav-link"> Company </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="faq.html"> FAQ </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="mailto:info@amanhomeinspection.co"> Contact </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section class="section-1">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 align-center" data-aos="fade-right" data-aos-duration="1000">
+          <h1 class="display-4 font-weight-bolder">
+            Beautiful food & takeaway,<span class="text-info"> delivered </span> to your  door.
+          </h1>
+          <p class="text-secondary">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500.
+          </p>
+          <button class="btn btn-info text-white p-3 px-4 mt-4"><a class="order" href="order.html"> Place an Order</a> </button> <br>
+          <img src="assets/images/trustpilot.svg" class="img-fluid mt-4">
+          <p class="text-info mt-2"> 4.8 out of 5 
+            <span class="text-secondary"> based on 2000+ reviews </span>
+          </p>
+        </div>
+        <div class="col-lg-6 align-center" data-aos="fade-left" data-aos-duration="1000">
+          <img src="assets/images/Hero-Image.png" class="img-fluid">
+        </div>
+      </div>
+
+      <div class="row section-1">
+        <div class="col-lg-6 align-center mb-3" data-aos="fade-right" data-aos-duration="1000">
+          <h1 class="display-4 text-info font-weight-bolder">
+            The home of fresh products
+          </h1>
+          <p class="text-secondary">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500.
+          </p>
+          <button class="btn btn-info text-white p-3 px-4 mt-4"><a class="order" href="company.html"> Learn about us </a> </button> <br>
+        </div>
+        <div class="col-lg-6 align-center" data-aos="fade-left" data-aos-duration="1000">
+          <img src="assets/images/Hero-Image-2.png" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-3">
+    <div class="container">
+      <div class="text-center" data-aos="fade-right" data-aos-duration="1000">
+        <h1 class="display-4 font-weight-bolder text-info"> How it works. </h1>
+      </div>
+      <div class="row text-center section-2" data-aos="fade-left" data-aos-duration="1000">
+        <div class="col-lg-4 col-md-4">
+          <img src="assets/images/work1.png" class="img-fluid mb-2">
+          <h3> Adapt your menu items </h3>
+          <p class="text-secondary">
+            Easily adapt your menu using the webflow CMS and allow customers to browse your items.
+          </p>
+        </div>
+        <div class="col-lg-4 col-md-4">
+          <img src="assets/images/work2.png" class="img-fluid mb-2">
+          <h3> Accept online order & takeout </h3>
+          <p class="text-secondary">
+            Let your customers order and pay via the powerful ecommerce system, or simple let them call your store.
+          </p>
+        </div>
+        <div class="col-lg-4 col-md-4">
+          <img src="assets/images/work-3.png" class="img-fluid mb-2">
+          <h3> Manage delivery or takeout </h3>
+          <p class="text-secondary">
+            Manage your own logistics and take orders simply through the ecommerce system.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-3">
+    <div class="container" id="items">
+      <div class="text-center" data-aos="fade-right" data-aos-duration="1000">
+        <h1 class="display-4 font-weight-bolder text-info"> Browse our menu </h1>
+        <p class="text-secondary">
+          Use our menu to place an order online, or phone our store to place a pickup order. Fast and fresh food.
+        </p>
+      </div>
+      <div class="text-center mt-5">
+        <!-- Nav pills -->
+        <ul class="nav nav-pills nav-justified">
+          <li class="nav-item">
+            <a class="nav-link active" data-toggle="pill" href="#home"> Burger </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="pill" href="#menu1"> Sides </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="pill" href="#menu2"> Drinks </a>
+          </li>
+        </ul>
+
+        <!-- Tab panes -->
+        <div class="tab-content text-left">
+          <div class="tab-pane active" id="home">
+            <div class="row grid-container">
+              <div class="d-flex mt-3 items" id="item-one">
+                <div class="col-lg-3">
+                  <img src="assets/images/burger-1.png" class="img-fluid one">
+                </div>
+                <div clas class="two"s="two">
+                  <h4 class=""> Burger Dreams
+                    <span class="text-info three three"> $ 9.20 USD </span>
+                  </h4>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                  </p>
+                  <input type="number" value="1" name="" style="width: 70px; padding: 8px;">
+                  <button class="btn btn-info p-2"> Add to Cart </button>
+                </div>
+              </div>
+              <div class="d-flex mt-3 items" id="item-two">
+                <div class="col-lg-3">
+                  <img src="assets/images/burger-4.png" class="img-fluid one">
+                </div>
+                <div class="two">
+                  <h4> Burger Waldo
+                    <span class="text-info three"> $ 10.00 USD </span>
+                  </h4>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                  </p>
+                  <input type="number" value="1" name="" style="width: 70px; padding: 8px;">
+                  <button class="btn btn-info p-2"> Add to Cart </button>
+                </div>
+              </div>
+              <div class="d-flex items" id="item-three">
+                <div class="col-lg-3">
+                  <img src="assets/images/burger-2.png" class="img-fluid one">
+                </div>
+                <div class="two">
+                  <h4> Burger Cali
+                    <span class="text-info three"> $ 8.00 USD </span>
+                  </h4>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                  </p>
+                  <input type="number" value="1" name="" style="width: 70px; padding: 8px;">
+                  <button class="btn btn-info p-2"> Add to Cart </button>
+                </div>
+              </div>
+              <div class="d-flex items" id="item-four">
+                <div class="col-lg-3">
+                  <img src="assets/images/burger-5.png" class="img-fluid one">
+                </div>
+                <div class="two">
+                  <h4> Burger Bacon Buddy
+                    <span class="text-info three"> $ 9.99 USD </span>
+                  </h4>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                  </p>
+                  <input type="number" value="1" name="" style="width: 70px; padding: 8px;">
+                  <button class="btn btn-info p-2"> Add to Cart </button>
+                </div>
+              </div>
+              <div class="d-flex items" id="item-five">
+                <div class="col-lg-3">
+                  <img src="assets/images/burger-3.png" class="img-fluid one">
+                </div>
+                <div class="two">
+                  <h4> Burger Spicy
+                    <span class="text-info three"> $ 9.20 USD </span>
+                  </h4>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                  </p>
+                  <input type="number" value="1" name="" style="width: 70px; padding: 8px;">
+                  <button class="btn btn-info p-2"> Add to Cart </button>
+                </div>
+              </div>
+              <div class="d-flex items" id="item-six">
+                <div class="col-lg-3">
+                  <img src="assets/images/burger-6.png" class="img-fluid one">
+                </div>
+                <div class="two">
+                  <h4> Burger Classic
+                    <span class="text-info three"> $ 8.00 USD </span>
+                  </h4>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                  </p>
+                  <input type="number" value="1" name="" style="width: 70px; padding: 8px;">
+                  <button class="btn btn-info p-2"> Add to Cart </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane container fade" id="menu1">
+            <div class="row grid-container">
+              <div class="d-flex mt-3 items" id="item-one">
+                <div class="col-lg-3">
+                  <img src="assets/images/side-1.png" class="img-fluid one">
+                </div>
+                <div class="two">
+                  <h4> Salad Ceaser
+                    <span class="text-info three"> $ 6.00 USD </span>
+                  </h4>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                  </p>
+                  <input type="number" value="1" name="" style="width: 70px; padding: 8px;">
+                  <button class="btn btn-info p-2"> Add to Cart </button>
+                </div>
+              </div>
+              <div class="d-flex mt-3 items" id="item-two">
+                <div class="col-lg-3">
+                  <img src="assets/images/side-2.png" class="img-fluid one">
+                </div>
+                <div class="two">
+                    <h4> Beans Slow Cooked
+                    <span class="text-info three"> $ 4.00 USD </span>
+                  </h4>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                  </p>
+                  <input type="number" value="1" name="" style="width: 70px; padding: 8px;">
+                  <button class="btn btn-info p-2"> Add to Cart </button>
+                </div>
+              </div>
+              <div class="d-flex items" id="item-three">
+                <div class="col-lg-3">
+                  <img src="assets/images/side-3.png" class="img-fluid one">
+                </div>
+                <div class="two">
+                  <h4> Fires Cheese
+                    <span class="text-info three"> $ 5.00 USD </span>
+                  </h4>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                  </p>
+                  <input type="number" value="1" name="" style="width: 70px; padding: 8px;">
+                  <button class="btn btn-info p-2"> Add to Cart </button>
+                </div>
+              </div>
+              <div class="d-flex items" id="item-four">
+                <div class="col-lg-3">
+                  <img src="assets/images/side-4.png" class="img-fluid one">
+                </div>
+                <div class="two">
+                  <h4> Fires Rustic
+                    <span class="text-info three"> $ 4.00 USD </span>
+                  </h4>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                  </p>
+                  <input type="number" value="1" name="" style="width: 70px; padding: 8px;">
+                  <button class="btn btn-info p-2"> Add to Cart </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane container fade" id="menu2">
+            <div class="row grid-container">
+              <div class="d-flex mt-3 items" id="item-one">
+                <div class="col-lg-3">
+                  <img src="assets/images/drink-1.png" class="img-fluid one">
+                </div>
+                <div class="two">
+                  <h4> Drink Fig & Limw
+                    <span class="text-info three"> $ 4.00 USD </span>
+                  </h4>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                  </p>
+                  <input type="number" value="1" name="" style="width: 70px; padding: 8px;">
+                  <button class="btn btn-info p-2"> Add to Cart </button>
+                </div>
+              </div>
+              <div class="d-flex mt-3 items" id="item-two">
+                <div class="col-lg-3">
+                  <img src="assets/images/drink-2.png" class="img-fluid one">
+                </div>
+                <div class="two">
+                  <h4> Drink Liquor
+                    <span class="text-info three"> $ 7.00 USD </span>
+                  </h4>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                  </p>
+                  <input type="number" value="1" name="" style="width: 70px; padding: 8px;">
+                  <button class="btn btn-info p-2"> Add to Cart </button>
+                </div>
+              </div>
+              <div class="d-flex items" id="item-three">
+                <div class="col-lg-3">
+                  <img src="assets/images/drink-3.png" class="img-fluid one">
+                </div>
+                <div class="two">
+                  <h4> Drink Lime
+                    <span class="text-info three"> $ 4.00 USD </span>
+                  </h4>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                  </p>
+                  <input type="number" value="1" name="" style="width: 70px; padding: 8px;">
+                  <button class="btn btn-info p-2"> Add to Cart </button>
+                </div>
+              </div>
+              <div class="d-flex items" id="item-four">
+                <div class="col-lg-3">
+                  <img src="assets/images/drink-4.png" class="img-fluid one">
+                </div>
+                <div class="two">
+                  <h4> Drink Cola
+                    <span class="text-info three"> $ 4.00 USD </span>
+                  </h4>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                  </p>
+                  <input type="number" value="1" name="" style="width: 70px; padding: 8px;">
+                  <button class="btn btn-info p-2"> Add to Cart </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="text-center mt-5">
+      <button class="btn btn-info p-3 px-5"><a href="order.html" class="order"> See Full Menu </a></button>
+    </div>
+  </section>
+
+  <section class="section-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 align-center" data-aos="fade-right" data-aos-duration="1000">
+          <img src="assets/images/Hero-Image-3.png" class="img-fluid">
+        </div>
+        <div class="col-lg-6 align-center" data-aos="fade-left" data-aos-duration="1000">
+          <h1 class="display-4 font-weight-bolder text-info">
+            Order online with our simple checkout.
+          </h1>
+          <p class="text-secondary">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500.
+          </p>
+          <button class="btn btn-info p-3 mt-5"><a class="order" href="faq.html"> See our FAQ </a></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 align-center mb-3" data-aos="fade-right" data-aos-duration="1000">
+          <h1 class="display-4 font-weight-bolder text-info">
+            Call our store and takeaway when it suits you best.
+          </h1>
+          <p class="text-secondary">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500.
+          </p>
+          <button class="btn btn-info p-3 mt-5"><a class="order" href="tel:5142940519"> Ph.  +61 233 2333 </a></button>
+        </div>
+        <div class="col-lg-6 align-center" data-aos="fade-left" data-aos-duration="1000">
+          <img src="assets/images/Hero-Image-4.png" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-1">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 mb-3" data-aos="fade-right" data-aos-duration="1000">
+          <img src="assets/images/Hero-Image-5.png" class="img-fluid">
+        </div>
+        <div class="col-lg-6 bg-info p-5" data-aos="fade-left" data-aos-duration="1000">
+          <h1 class="display-4 font-weight-bolder text-primary"> Support 
+            <span class="text-white"> good food and local bussiness. </span>
+          </h1>
+          <button class="btn p-3 px-4 mt-4 order2"><a href="order.html" class="order1"> Order Now </a></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-lg-3 col-md-6 order3" data-aos="fade-right" data-aos-duration="1000"> <br>
+          <img src="assets/images/logo.svg" class="img-fluid navbar-brand"> <Br>
+          <p class="text-secondary">
+            Takeaway & Delivery template for small - medium businesses.
+          </p>
+        </div>
+        <div class="col-lg-3 col-md-6 order3" data-aos="fade-right" data-aos-duration="1000">
+          <h5> COMPANY </h5>
+          <ul>
+            <li><a href="index.html"> Home </a></li>
+            <li><a href="order.html"> Order </a></li>
+            <li><a href="faq.html"> FAQ </a></li>
+            <li><a href="contact.html"> Contact </a></li>
+          </ul> 
+        </div>
+        <div class="col-lg-3 col-md-6 order3" data-aos="fade-left" data-aos-duration="1000">
+          <h5> TEMPLATE </h5>
+          <ul>
+            <li><a href="style-guide.html"> Style Guide </a></li>
+            <li><a href="changelog.html"> Changelog </a></li>
+            <li><a href="license.html"> License </a></li>
+            <li><a href="index.html"> Webflow Universtiy </a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 order3" data-aos="fade-left" data-aos-duration="1000">
+          <h5> FLOWBASE </h5>
+          <ul>
+            <li><a href="index.html"> More Cloneables </a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+<script type="text/javascript">
+  AOS.init();
+</script>
+</html>
